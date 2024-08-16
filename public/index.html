@@ -18,6 +18,17 @@
 </head>
 
 <body>
+
+  <form className='contact-form' name='contact' netlify netlify-honeypot="bot-field" hidden>
+    <div className='form-row'>
+        <input type='text' name='name' />
+        <input type='text' name='lastname'  />
+    </div>
+    <input type='email' name='email' autoComplete='email' placeholder='E-Mail' />
+    <textarea name='message' ></textarea>
+
+</form>
+
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>

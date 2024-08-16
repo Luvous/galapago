@@ -14,12 +14,13 @@ function Contact() {
                 </div>
                 <div className='section-main contact-container'>
                     <form className='contact-form' name='contact' method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact"/>
                         <div className='form-row'>
-                            <input type='text' name='name' placeholder='Nombre' />
-                            <input type='text' name='lastname' placeholder='Apellido' />
+                            <input required type='text' name='name' placeholder='Nombre' />
+                            <input required type='text' name='lastname' placeholder='Apellido' />
                         </div>
-                        <input type='email' name='email' autoComplete='email' placeholder='E-Mail' />
-                        <textarea placeholder='Mensaje'></textarea>
+                        <input required type='email' name='email' autoComplete='email' placeholder='E-Mail' />
+                        <textarea required name='message' placeholder='Mensaje'></textarea>
                         <button type='submit'>ENVIAR</button>
                     </form>
                     <div className='contact-illustration'>
