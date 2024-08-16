@@ -13,12 +13,12 @@ function Contact() {
                     <p>Contanos sobre vos o los proyectos que tengas en mente!</p>
                 </div>
                 <div className='section-main contact-container'>
-                    <form className='contact-form'>
+                    <form className='contact-form' name='contact' netlify>
                         <div className='form-row'>
-                            <input type='text' placeholder='Nombre' />
-                            <input type='text' placeholder='Apellido' />
+                            <input type='text' name='name' placeholder='Nombre' />
+                            <input type='text' name='lastname' placeholder='Apellido' />
                         </div>
-                        <input type='email' autoComplete='email' placeholder='E-Mail' />
+                        <input type='email' name='email' autoComplete='email' placeholder='E-Mail' />
                         <textarea placeholder='Mensaje'></textarea>
                         <button type='submit'>ENVIAR</button>
                     </form>
