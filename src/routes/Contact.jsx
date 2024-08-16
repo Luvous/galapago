@@ -13,7 +13,7 @@ function Contact() {
                     <p>Contanos sobre vos o los proyectos que tengas en mente!</p>
                 </div>
                 <div className='section-main contact-container'>
-                    <form className='contact-form' name='contact' netlify>
+                    <form className='contact-form' name='contact' method="POST" data-netlify="true">
                         <div className='form-row'>
                             <input type='text' name='name' placeholder='Nombre' />
                             <input type='text' name='lastname' placeholder='Apellido' />
