@@ -16,10 +16,10 @@ function Contact() {
                 <div className='sections-sheet'>
                     <div className='sections-top-img'>
                         <h2>CONTACTO</h2>
-                        <p>Contanos sobre vos o los proyectos que tengas en mente!</p>
+                        <p>Contanos sobre tu marca o los proyectos que tengas en mente!</p>
                     </div>
                     <div className='section-main contact-container'>
-                        <form className='contact-form' name='contact' method="POST" data-netlify="true" action="/contact/sent">
+                        <form  action="/contact/sent" className='contact-form' name='contact' method="POST" data-netlify="true" >
                             <input type="hidden" name="form-name" value="contact" />
                             <div className='form-row'>
                                 <input required type='text' name='name' placeholder='Nombre' />
