@@ -1,6 +1,8 @@
-import React, { useState, useEffect, setModalOpen } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function CustomForm({ status, message, onValidated }) {
+
+    
     const [email, setEmail] = useState('');
     const [firstName, setFirstName] = useState('');
 
@@ -77,7 +79,6 @@ function CustomForm({ status, message, onValidated }) {
             {
                 status === 'success' ? (
                     <button
-                        onClick={() => setModalOpen(false)}
                         className="g__justify-self-center"
                     >
                         Close
