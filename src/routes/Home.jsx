@@ -1,25 +1,28 @@
-import React from 'react'
-import Landing from '../components/landing'
-import RainOfG from '../components/rainofG'
-import Projects from '../components/Projects'
-import WorkWithUs from '../components/WorkWithUs'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-// import BlogSection from '../components/BlogSection'
+import React, { Suspense } from 'react';
+import BubbleLoader from '../components/BubbleLoader';
+
+const NavBar = React.lazy(() => import('../components/NavBar'));
+const Landing = React.lazy(() => import('../components/landing'));
+const RainOfG = React.lazy(() => import('../components/rainofG'));
+const Projects = React.lazy(() => import('../components/Projects'));
+const WorkWithUs = React.lazy(() => import('../components/WorkWithUs'));
+const Footer = React.lazy(() => import('../components/Footer'));
+// const BlogSection = React.lazy(() => import('../components/BlogSection'));
 
 function Home() {
-
     return (
-        <div>
-            <NavBar />
-            <Landing />
-            <RainOfG />
-            <Projects />
-            <WorkWithUs />
-            {/* <BlogSection /> */}
-            <Footer />
-        </div>
-    )
+        <Suspense fallback={<BubbleLoader />}>
+            <div>
+                <NavBar />
+                <Landing  />
+                <RainOfG />
+                <Projects />
+                <WorkWithUs />
+                {/* <BlogSection /> */}
+                <Footer />
+            </div>
+        </Suspense>
+    );
 }
 
-export default Home
+export default Home;

@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-function Spood() {
-    const phrases = [
+
+function Spood({prompt}) {
+
+    const contactPhrases = [
         "¿Necesitas un servicio personalizado? Contáctanos para que podamos asesorarte.",
         "¡Nos encantaría saber más sobre tu proyecto! Hablemos.",
         "¿Tienes una idea en mente? Estamos aquí para ayudarte.",
@@ -19,33 +21,46 @@ function Spood() {
         "¡Estás a un click de tener la imagen de marca que siempre soñaste!"
     ];
 
+    const servicesPhrases = [
+        "Descubre cómo nuestros servicios pueden llevar tu marca al siguiente nivel.",
+        "¡Explora nuestras soluciones a medida para tu negocio! Ve a servicios.",
+        "¿Buscas resultados? Conoce nuestros servicios y cómo podemos ayudarte.",
+        "Nuestros servicios están diseñados para impulsar tu marca. ¡Conócelos!",
+        "Transforma tu visión en realidad con nuestros servicios personalizados.",
+        "¡Encuentra el servicio perfecto para ti! Descubre más en nuestra página de servicios.",
+        "Potencia tu negocio con nuestros servicios especializados. ¡Visítanos!",
+        "Descubre cómo podemos hacer que tu marca destaque. Conoce nuestros servicios.",
+        "Servicios que se adaptan a tus necesidades. ¡Ve a servicios y encuentra el tuyo!",
+        "Lleva tu negocio al siguiente nivel con nuestros servicios profesionales.",
+        "¿Listo para un cambio? Descubre cómo nuestros servicios pueden ayudarte.",
+        "Enfoca tu estrategia con nuestros servicios especializados. ¡Conócelos!",
+        "Nuestros servicios están diseñados para hacer que tu marca brille. ¡Descúbrelos!",
+        "Encuentra la solución que tu negocio necesita en nuestra página de servicios.",
+        "Explora las opciones que tenemos para ti. Visita nuestros servicios."
+    ];
+    const phrases = prompt === 'contact' ? servicesPhrases : contactPhrases;
     const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+
+    // Determinar la URL y el texto del enlace en función del prop 'prompt'
+    const linkDetails = prompt === 'contact'
+        ? { url: '/services', text: 'SERVICIOS' }
+        : { url: '/contact', text: 'CONTACTO' };
+
+
+
 
     return (
         <div
-            style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexDirection: 'row',
-                padding: '0px 3rem',
-                margin: '2rem 0'
-            }}>
-            <p style={{
-                width: '60%',
-                fontSize: '1.8rem'
-            }}>{randomPhrase}</p>
+            className='spood-container'>
+            <p>{randomPhrase}</p>
 
-            <div style={{
-                paddingRight: '15px',
-                fontStyle: 'italic',
-                fontSize: '1.6rem',
-                fontWeight: '400',
-                lineHeight: '0',
-                background: 'var(--darkgreen)'
-            }}>
-                <p>CONTACTO</p>
-            </div>
+
+
+            <a href={linkDetails.url} className='spoodcont'>
+
+                <p>{linkDetails.text}</p>
+            </a>
+
         </div>
     )
 }

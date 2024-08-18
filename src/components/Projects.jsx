@@ -8,9 +8,10 @@ function Projects() {
         <section id='Projects'>
             <div className='col'>
                 <div className='row'>
-                    <a target="_blank" href='https://www.behance.net/gallery/153559705/Fugaz-Pizzeria-Punk-Branding-Concept' className='project-box'>
+                    <a target="_blank" rel="noreferrer" href='https://www.behance.net/gallery/153559705/Fugaz-Pizzeria-Punk-Branding-Concept' className='project-box'>
                         <div className="overlay" />
                         <img
+                        alt='project_img fugaz'
                             src={fugaz}
                             style={{
                                 width: '100%',
@@ -21,9 +22,10 @@ function Projects() {
                     </a>
                 </div>
                 <div className='row'>
-                    <a target="_blank" href='https://www.behance.net/gallery/192032619/Sakura-Vivero-Rebranding-Project' className='project-box'>
+                    <a target="_blank" rel="noreferrer"  href='https://www.behance.net/gallery/192032619/Sakura-Vivero-Rebranding-Project' className='project-box'>
                         <div className="overlay" />
                         <img
+                        alt='project_img sakura'
                             src={sakura}
                             style={{
                                 width: '100%',
@@ -35,10 +37,11 @@ function Projects() {
                 </div>
             </div>
             <div className='col'>
-                <a target="_blank" href='https://www.behance.net/gallery/156818073/NUFF-Comics-Books-Branding-and-Identity-Design' className='project-box'>
+                <a target="_blank" rel="noreferrer"  href='https://www.behance.net/gallery/156818073/NUFF-Comics-Books-Branding-and-Identity-Design' className='project-box'>
                     <div className="overlay" />
 
                     <img
+                    alt='project_img nuff'
                         src={nuff}
                         style={{
                             width: '100%',

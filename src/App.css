@@ -320,7 +320,7 @@ h1 {
   justify-content: center;
 }
 
-.newsletter-cta a {
+.newsletter-cta p {
   color: var(--white);
   font-family: 'Josefin Sans', sans-serif;
   font-style: italic;
@@ -426,11 +426,11 @@ hr {
   width: 35%;
 }
 
-.about-img{
-    width: auto;
-    height: 65%;
-    object-fit: contain;
-    border: 5px solid var(--yellow);
+.about-img {
+  width: auto;
+  height: 65%;
+  object-fit: contain;
+  border: 5px solid var(--yellow);
 }
 
 .services-grid {
@@ -443,6 +443,7 @@ hr {
 }
 
 .service-card {
+  min-height: -webkit-fill-available;
   background-color: var(--black);
   border-radius: 8px;
   padding: 20px;
@@ -450,6 +451,7 @@ hr {
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  filter: drop-shadow(0 7px 3mm rgba(0, 0, 0, 0.57));
 }
 
 .service-grid:nth-child(-n+3) {
@@ -510,8 +512,9 @@ input, textarea {
 
 input::placeholder, textarea::placeholder {
   color: var(--white);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #c1c4c0;
 }
 
 .form-row input {
@@ -548,6 +551,192 @@ button:hover {
   /* Aquí puedes añadir estilos para tu ilustración, como un background-image o img tag */
 }
 
+.spood-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 3rem;
+  margin: 2rem 0;
+}
+
+.spood-container p{
+  width: 60%;
+  font-size: 1.8rem;
+}
+
+.spoodcont{
+  padding-right: 15px;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 0;
+  background-color: var(--darkgreen);
+}
+
+.mc__title {
+  max-width: 235px;
+  text-align: center;
+  color: var(--green);
+  margin: auto;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+
+.mc__form-container {
+  width: 100%;
+  margin: 0 auto;
+  transition: height .2s ease;
+}
+
+.mc__form {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-row-gap: 40px;
+  justify-content: stretch;
+  align-items: center;
+  transition: height .2s ease;
+}
+
+.mc__field-container {
+  display: grid;
+  grid-row-gap: 1rem;
+}
+
+.mc__alert {
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Assuming this is the font stack for m.poppinsFontStack */
+}
+
+.mc__alert--sending {
+  color: var(--green); /* Replace with the actual color value */
+  -webkit-animation: fade-loop 0.8s ease-in-out infinite alternate-reverse both;
+  animation: fade-loop 0.8s ease-in-out infinite alternate-reverse both;
+}
+
+.mc__alert--success {
+  color: var(--green); /* Replace with the actual color value */
+  margin-top: -60px;
+}
+
+.mc__alert--error {
+  color: rgb(255, 93, 93) /* Replace with the actual color value */;
+  font-weight: bold;
+}
+
+.mc__alert--error a {
+  color: var(--green); /* Replace with the actual color value */
+  transition: .3s ease-in-out;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px;
+  opacity: .7;
+}
+
+.mc__alert--error a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+@-webkit-keyframes fade-loop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-loop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.inputsubscribe{
+  background: var(--darkgreen);
+  font-size: 1.8rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.inputsubscribe:hover{
+  background: var(--green);
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  top: 0; /* Ajusta según lo necesites */
+  right: 0; /* Ajusta según lo necesites */
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.bubble-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-color: var(--green);
+  border-radius: 50%;
+  animation: bubbleAnimation 1s infinite;
+}
+
+.bubble:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bubble:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bubbleAnimation {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+  }
+}
 
 
 @media (max-width: 1024px) {
@@ -569,7 +758,15 @@ button:hover {
 
 @media (max-width: 768px) {
 
- 
+  .mc__title {
+    margin: 0 auto 30px;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 
   .rain-container {
     height: 20vh;
@@ -611,13 +808,14 @@ button:hover {
     margin: 0;
   }
 
-  .cont-ttwphone{
+  .cont-ttwphone {
     right: 2rem;
     left: 2rem;
     bottom: 8rem;
     width: auto;
     height: 200px;
   }
+
   #Projects {
     flex-direction: column;
   }
@@ -674,7 +872,7 @@ button:hover {
     /* Ocupan toda la columna */
   }
 
-  .service-card p{
+  .service-card p {
     font-weight: 300;
     font-size: 19px;
   }
@@ -692,51 +890,52 @@ button:hover {
     /* Ocultar ilustración en pantallas pequeñas */
   }
 
-  .newsletter-cta{
+  .newsletter-cta {
     height: 3rem;
     font-size: 1.7rem;
   }
 
-  .row-ft{
+  .row-ft {
     flex-direction: column;
   }
 
-  .ls-col{
+  .ls-col {
     display: flex;
     justify-content: space-between;
     padding: .5em 0;
   }
-  
-  .rs-col{
+
+  .rs-col {
     display: flex;
     justify-content: space-between;
   }
 
-  #Footer{
+  #Footer {
     height: auto;
   }
 
-  .realfooter{
+  .realfooter {
     margin-bottom: 2rem;
     font-size: .8rem;
   }
 
-  .colcol{
+  .colcol {
     padding: 0;
     margin-top: 1.5rem;
   }
 
-  .sections-top-img{
+  .sections-top-img {
     width: auto;
     padding: 0 1rem;
   }
 
-  .section-main{
+  .section-main {
+    background-image: url(./resources/BACKGROUND-mobile.png);
     flex-direction: column-reverse;
     height: auto;
   }
 
-  .about-img{
+  .about-img {
     margin: 1rem 0;
     width: 90vw;
     height: auto;
@@ -744,7 +943,7 @@ button:hover {
     right: 1rem;
   }
 
-  .about-text-container{
+  .about-text-container {
     width: auto;
     margin: 1rem;
   }
@@ -757,18 +956,30 @@ button:hover {
     padding-bottom: 1rem;
   }
 
-  .sections-top-img p{
+  .sections-top-img p {
     font-size: 1.5rem;
     width: 90%;
     margin: 0 0 5rem 0;
   }
 
-  .sections-sheet{
+  .sections-sheet {
     min-height: auto;
   }
 
-  .contact-container{
+  .contact-container {
     align-items: stretch;
     padding: 3rem 1rem;
+  }
+
+  .spood-container{
+    margin: 0;
+    padding: 0 1rem;
+    padding-bottom: .5rem;
+  }
+
+  .spood-container p{
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }

@@ -8,7 +8,7 @@ import Home from './Home.jsx';
 import Services from './Services.jsx';
 import Contact from './Contact.jsx';
 import About from './About.jsx';
-// import Page404 from './Page404.jsx';
+import Page404 from './Page404.jsx';
 
 const Webpages = () => {
 
@@ -20,7 +20,7 @@ const Webpages = () => {
                 <Route exact path="/contact" element={<Contact />} />
                 <Route exact path="/about" element={<About />} />
  
-                {/* <Route path="*" element={<Page404 />} />  */}
+                <Route path="*" element={<Page404 />} /> 
             </Routes>
         </Router>
     );

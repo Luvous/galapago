@@ -29,8 +29,7 @@ function Landing() {
     return (
         <section id='Landing'>
 
-            {/* <video preload="true" autoPlay muted className='noisebck' loop src={landingback} alt='noise' /> */}
-            <img className='noisebck' src={landingback} />
+            <img alt='background noise' className='noisebck' src={landingback} />
             <CursorFollower size={150} />
             <div className='shifting-text'>
                 <h1> <TypeAnimation
@@ -70,7 +69,7 @@ function Landing() {
                 width: '100%',
                 height: '100%'
             }}>
-                <img className='ttwphone' src={randomGif} alt='.' />
+                <img alt="gif turtles" className='ttwphone' src={randomGif} />
             </div>
             </div>
 

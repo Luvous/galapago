@@ -1,57 +1,62 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import services from '../resources/sections/services.jpg'
+import React, { Suspense } from 'react';
+import BubbleLoader from '../components/BubbleLoader';
 import { Icon } from '@iconify/react';
-import Spood from '../components/Spood';
+
+const NavBar = React.lazy(() => import('../components/NavBar'));
+const Footer = React.lazy(() => import('../components/Footer'));
+const Spood = React.lazy(() => import('../components/Spood'));
+const Projects = React.lazy(() => import('../components/Projects'));
 
 function Services() {
     return (
-        <section id='Services'>
-            <NavBar />
-            <div className='sections-sheet'>
-                <div className='sections-top-img'>
-                    <h2>SERVICIOS</h2>
-                    <p>Descubrí algunos de nuestros servicios principales.</p>
-                </div>
+        <Suspense fallback={<BubbleLoader />}>
+            <section id='Services'>
+                <NavBar />
+                <div className='sections-sheet' style={{paddingBottom: '0'}}>
+                    <div className='sections-top-img'>
+                        <h2>SERVICIOS</h2>
+                        <p>Descubrí algunos de nuestros principales servicios.</p>
+                    </div>
 
-                <div className='section-main services-grid'>
-                    <div className='service-card'>
-                        <Icon icon="fluent:design-ideas-16-filled" width='7rem' color='var(--yellow)' />
-                        <h3>Branding</h3>
-                        <p>Creación y rediseño de identidades visuales únicas y coherentes que representan la esencia de tu marca.</p>
-                    </div>
-                    <div className='service-card'>
-                        <Icon icon="fluent:megaphone-loud-20-filled" width='7rem' color='var(--yellow)' />
-                        <h3>Marketing Digital</h3>
-                        <p>Desarrollo de estrategias efectivas para aumentar la visibilidad y el alcance de tu marca en el entorno digital.</p>
-                    </div>
-                    <div className='service-card'>
-                        <Icon icon="fluent:window-dev-edit-16-filled" width='7rem' color='var(--yellow)' />
-                        <h3>Desarrollo Web</h3>
-                        <p>Diseño y desarrollo de sitios funcionales y estéticamente atractivos que reflejan la identidad de tu marca.</p>
-                    </div>
-                    <div className='service-card'>
-                        <Icon icon="mdi:web" width='5.8rem' color='var(--white)' />
-                        <h3>Redes Sociales</h3>
-                        <p>Creación y gestión de campañas publicitarias para alcanzar a tu público objetivo.</p>
-                    </div>
-                    <div className='service-card'>
-                        <Icon icon="clarity:design-solid" width='5.75rem' color='var(--white)' />
-                        <h3>Diseño Gráfico</h3>
-                        <p>Diseño gráfico para productos digitales o impresión, producción y maquetados para diversos rubros.</p>
-                    </div>
-                    <div className='service-card'>
-                        <Icon icon="fluent:news-20-filled" width='5.8rem' color='var(--white)' />
-                        <h3>Publicidad</h3>
-                        <p>Creación y gestión de campañas publicitarias para alcanzar a tu público objetivo.</p>
+                    <div className='section-main services-grid'>
+                        <div className='service-card'>
+                            <Icon icon="fluent:design-ideas-16-filled" width='7rem' color='var(--yellow)' />
+                            <h3>Branding</h3>
+                            <p>Creación y rediseño de identidades visuales únicas y coherentes que representan la esencia de tu marca.</p>
+                        </div>
+                        <div className='service-card'>
+                            <Icon icon="fluent:megaphone-loud-20-filled" width='7rem' color='var(--yellow)' />
+                            <h3>Marketing Digital</h3>
+                            <p>Desarrollo de estrategias efectivas para aumentar la visibilidad y el alcance de tu marca en el entorno digital.</p>
+                        </div>
+                        <div className='service-card'>
+                            <Icon icon="fluent:window-dev-edit-16-filled" width='7rem' color='var(--yellow)' />
+                            <h3>Desarrollo Web</h3>
+                            <p>Diseño y desarrollo de sitios funcionales y estéticamente atractivos que reflejan la identidad de tu marca.</p>
+                        </div>
+                        <div className='service-card'>
+                            <Icon icon="mdi:web" width='5.8rem' color='var(--white)' />
+                            <h3>Redes Sociales</h3>
+                            <p>Creación y gestión de campañas publicitarias para alcanzar a tu público objetivo.</p>
+                        </div>
+                        <div className='service-card'>
+                            <Icon icon="clarity:design-solid" width='5.75rem' color='var(--white)' />
+                            <h3>Diseño Gráfico</h3>
+                            <p>Diseño gráfico para productos digitales o impresión, producción y maquetados para diversos rubros.</p>
+                        </div>
+                        <div className='service-card'>
+                            <Icon icon="fluent:news-20-filled" width='5.8rem' color='var(--white)' />
+                            <h3>Publicidad</h3>
+                            <p>Creación y gestión de campañas publicitarias para alcanzar a tu público objetivo.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-<Spood />
-            <Footer />
-        </section>
-    )
+                <Projects />
+                <Spood />
+                <Footer />
+            </section>
+        </Suspense>
+    );
 }
 
-export default Services
+export default Services;
