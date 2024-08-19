@@ -12,7 +12,6 @@ import Page404 from './Page404.jsx';
 import SentContact from './SentContact.jsx';
 
 const Webpages = () => {
-
     return (
         <Router>
             <Routes>
