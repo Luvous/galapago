@@ -2,3 +2,8 @@
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "."
+
+[[redirects]]
+from = "/sitemap.xml"
+to = "/sitemap.xml"
+status = 200
