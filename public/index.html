@@ -10,23 +10,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
- rel="stylesheet">
+    rel="stylesheet">
   <meta name="description" content="Website for Galapago Studio" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Galápago Studio</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJHXWDNBDS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LJHXWDNBDS');
+  </script>
 </head>
 
 <body>
-  <form className='contact-form' name='Contact' netlify netlify-honeypot="bot-field" method="POST" hidden action="/contact/sent">
+  <form className='contact-form' name='Contact' netlify netlify-honeypot="bot-field" method="POST" hidden
+    action="/contact/sent">
     <div className='form-row'>
-        <input type='text' name='name' />
-        <input type='text' name='lastname'  />
+      <input type='text' name='name' />
+      <input type='text' name='lastname' />
     </div>
     <input type='email' name='email' autoComplete='email' placeholder='E-Mail' />
-    <textarea name='message' ></textarea>
+    <textarea name='message'></textarea>
 
-</form>
+  </form>
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
