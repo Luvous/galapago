@@ -12,10 +12,10 @@ function About() {
     return (
         <Suspense fallback={<BubbleLoader />}>
             <Helmet>
-                <title>Sobre Nosotros | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
-                <meta name="description" content="Descubrí por qué Gálapago es la mejor opción para tu marca." />
-                <meta property="og:title" content="Sobre Nosotros | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
-                <meta property="og:description" content="Descubrí por qué Gálapago es la mejor opción para tu marca." />
+            <title>Nosotros | Gálapago Studio.</title>
+                <meta name="description" content="Conoce más sobre nosotros. Descubrí por que somos la mejor opción." />
+                <meta property="og:title" content="Nosotros | Gálapago Studio." />
+                <meta property="og:description" content="Conoce más sobre nosotros. Descubrí por que somos la mejor opción." />
                 <meta name="keywords" content="marketing digital, branding, marketing, Argentina, adquirir logo, dtf, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
             </Helmet>
             <section id='Services'>

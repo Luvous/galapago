@@ -13,10 +13,10 @@ function Services() {
     return (
         <Suspense fallback={<BubbleLoader />}>
             <Helmet>
-                <title>Servicios | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
-                <meta name="description" content="Conoce nuestros principales servicios." />
-                <meta property="og:title" content="Servicios | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
-                <meta property="og:description" content="Conoce nuestros principales servicios." />
+                <title>Servicios | Gálapago Studio.</title>
+                <meta name="description" content="Conoce los principales servicios creativos de Gálapago Studio para impulsar tu marca en medios digitales." />
+                <meta property="og:title" content="Servicios | Gálapago Studio." />
+                <meta property="og:description" content="Conoce los principales servicios creativos de Gálapago Studio para impulsar tu marca en medios digitales." />
                 <meta name="keywords" content="marketing digital, branding, marketing, Argentina, adquirir logo, dtf, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
             </Helmet>
             <section id='Services'>

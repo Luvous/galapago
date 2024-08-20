@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import BubbleLoader from '../components/BubbleLoader';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const NavBar = React.lazy(() => import('../components/NavBar'));
 const Footer = React.lazy(() => import('../components/Footer'));
@@ -12,10 +12,10 @@ function Contact() {
     return (
         <Suspense fallback={<BubbleLoader />}>
             <Helmet>
-                <title>Contacto | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
-                <meta name="description" content="Contanos sobre tu marca o los proyectos que tengas en mente y te asesoramos." />
-                <meta property="og:title" content="Contacto | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
-                <meta property="og:description" content="Contanos sobre tu marca o los proyectos que tengas en mente y te asesoramos." />
+                <title>Contacto | Gálapago Studio.</title>
+                <meta name="description" content="Contactanos y te asesoramos sobre tu marca. Branding y marketing en un solo lugar." />
+                <meta property="og:title" content="Contacto | Galapago Studio." />
+                <meta property="og:description" content="Contactanos y te asesoramos sobre tu marca. Branding y marketing en un solo lugar." />
                 <meta name="keywords" content="marketing digital, branding, marketing, Argentina, contacto, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
             </Helmet>
             <section id='Services'>
