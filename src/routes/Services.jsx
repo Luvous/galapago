@@ -10,9 +10,16 @@ const Projects = React.lazy(() => import('../components/Projects'));
 function Services() {
     return (
         <Suspense fallback={<BubbleLoader />}>
+            <Helmet>
+                <title>Servicios | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
+                <meta name="description" content="Conoce nuestros principales servicios." />
+                <meta property="og:title" content="Servicios | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
+                <meta property="og:description" content="Conoce nuestros principales servicios." />
+                <meta name="keywords" content="marketing digital, branding, marketing, Argentina, adquirir logo, dtf, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
+            </Helmet>
             <section id='Services'>
                 <NavBar />
-                <div className='sections-sheet' style={{paddingBottom: '0'}}>
+                <div className='sections-sheet' style={{ paddingBottom: '0' }}>
                     <div className='sections-top-img'>
                         <h2>SERVICIOS</h2>
                         <p>Descubrí algunos de nuestros principales servicios.</p>

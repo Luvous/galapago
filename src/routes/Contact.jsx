@@ -11,6 +11,13 @@ function Contact() {
 
     return (
         <Suspense fallback={<BubbleLoader />}>
+            <Helmet>
+                <title>Contacto | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
+                <meta name="description" content="Contanos sobre tu marca o los proyectos que tengas en mente y te asesoramos." />
+                <meta property="og:title" content="Contacto | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
+                <meta property="og:description" content="Contanos sobre tu marca o los proyectos que tengas en mente y te asesoramos." />
+                <meta name="keywords" content="marketing digital, branding, marketing, Argentina, contacto, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
+            </Helmet>
             <section id='Services'>
                 <NavBar />
                 <div className='sections-sheet'>
@@ -19,7 +26,7 @@ function Contact() {
                         <p>Contanos sobre tu marca o los proyectos que tengas en mente!</p>
                     </div>
                     <div className='section-main contact-container'>
-                        <form  action="/contact/sent" className='contact-form' name='contact' method="POST" data-netlify="true" >
+                        <form action="/contact/sent" className='contact-form' name='contact' method="POST" data-netlify="true" >
                             <input type="hidden" name="form-name" value="contact" />
                             <div className='form-row'>
                                 <input required type='text' name='name' placeholder='Nombre' />

@@ -10,30 +10,36 @@ function Landing() {
 
     return (
         <section id='404' >
-        <NavBar />
-        <div style={{minHeight:'100vh'}}>
-        <img alt='background noise' className='noisebck' src={landingback} />
-            <CursorFollower size={150} />
-            <div className='shifting-text'>
-                <h1 style={{color : 'var(--green)', fontSize:'8rem'}}> 404 :( </h1>
+            <Helmet>
+                <title>404 | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
+                <meta name="description" content="La página que buscas no está disponible." />
+                <meta property="og:title" content="404 | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
+                <meta property="og:description" content="La página que buscas no está disponible." />
+            </Helmet>
+            <NavBar />
+            <div style={{ minHeight: '100vh' }}>
+                <img alt='background noise' className='noisebck' src={landingback} />
+                <CursorFollower size={150} />
+                <div className='shifting-text'>
+                    <h1 style={{ color: 'var(--green)', fontSize: '6.5rem' }}> 404 :( </h1>
 
-                <div className='subtext'>
-                    <p>Página no encontrada.</p>
+                    <div className='subtext'>
+                        <p>Página no encontrada.</p>
+                    </div>
                 </div>
-            </div>
-            <div className='cont-ttwphone'>
-            <div style={{  
-                border: '5px solid var(--yellow)',
-                width: '100%',
-                height: '100%'
-            }}>
-                <img alt="gif turtles" className='ttwphone' src={turtle_404} />
-            </div>
+                <div className='cont-ttwphone'>
+                    <div style={{
+                        border: '5px solid var(--yellow)',
+                        width: '100%',
+                        height: '100%'
+                    }}>
+                        <img alt="gif turtles" className='ttwphone' src={turtle_404} />
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-          
-            <Footer/>
+            <Footer />
         </section>
     )
 }

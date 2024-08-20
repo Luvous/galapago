@@ -1,6 +1,6 @@
 import React from 'react'
 import nuff from '../resources/project/nuff.jpg'
-import sakura from '../resources/project/sakura.png'
+import sakura from '../resources/project/sakura.jpg'
 import fugaz from '../resources/project/fugaz.jpg'
 
 function Projects() {

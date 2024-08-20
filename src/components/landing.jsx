@@ -1,6 +1,5 @@
 import React from 'react'
 import landingback from '../resources/noise-background-quick.png';
-// import TortoiseWithPhone from '../resources/tortoisewithphone_filter.gif';
 import turtle_1 from '../resources/turtle_1.webp';
 import turtle_2 from '../resources/turtle_2.webp';
 import turtle_3 from '../resources/turtle_3.webp';
@@ -28,7 +27,6 @@ function Landing() {
 
     return (
         <section id='Landing'>
-
             <img alt='background noise' className='noisebck' src={landingback} />
             <CursorFollower size={150} />
             <div className='shifting-text'>
