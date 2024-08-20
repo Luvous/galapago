@@ -46,9 +46,12 @@ function Footer() {
             </div>
             <div className='realfooter'>
                 <div className='row-ft'>
-                    <div className='ls-col'>
+                    <div style={{textAlign:'left'}} className='ls-col'>
                         <img alt='icon galapago' src={galapago_icon} style={{ width: '2.5rem', marginRight: '2em' }} />
-                        <p>studio.galapago@gmail.com</p>
+                        <div>
+                        <a rel="noreferrer" target='_blank' href="mailto:studio.galapago@gmail.com">studio.galapago@gmail.com</a><br/> <br/>
+                        <a rel="noreferrer" target='_blank' href='https://wa.me/5491139299529'>+54 9 11 3929-9529</a>
+                        </div>
                     </div>
                     <div className='rs-col'>
                         <div className='colcol'>

@@ -12,9 +12,9 @@ function Landing() {
     return (
         <section id='404' >
             <Helmet>
-                <title>404 | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales.</title>
+                <title>404</title>
                 <meta name="description" content="La página que buscas no está disponible." />
-                <meta property="og:title" content="404 | Galapago Studio | Soluciones creativas para impulsar tu marca en medios digitales." />
+                <meta property="og:title" content="404" />
                 <meta property="og:description" content="La página que buscas no está disponible." />
             </Helmet>
             <NavBar />
