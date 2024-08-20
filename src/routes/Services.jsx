@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react';
 import BubbleLoader from '../components/BubbleLoader';
 import { Icon } from '@iconify/react';
+import {Helmet} from "react-helmet";
+
 
 const NavBar = React.lazy(() => import('../components/NavBar'));
 const Footer = React.lazy(() => import('../components/Footer'));

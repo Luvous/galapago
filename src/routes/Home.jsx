@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import BubbleLoader from '../components/BubbleLoader';
 
+
 const NavBar = React.lazy(() => import('../components/NavBar'));
 const Landing = React.lazy(() => import('../components/landing'));
 const RainOfG = React.lazy(() => import('../components/rainofG'));

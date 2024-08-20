@@ -4,6 +4,7 @@ import turtle_404 from '../resources/404.webp';
 import CursorFollower from '../components/CursorFollower';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import {Helmet} from "react-helmet";
 
 function Landing() {
 
