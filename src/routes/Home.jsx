@@ -31,7 +31,7 @@ function Home() {
         "hasMap": "https://maps.google.com/maps?cid=YOURCIDNUMBER",
         "address": {
             "@type": "PostalAddress",
-            "adressCountry":"Argentina",
+            "addressCountry":"Argentina",
             "addressLocality": "Buenos Aires",
             "addressRegion": "AR",
             "postalCode": "C1044",
@@ -48,7 +48,7 @@ function Home() {
                 <meta name="description" content="Estudio creativo en medios digitales. Diseño gráfico, desarrollo web, y estrategias de marketing digital para tu marca." />
                 <meta property="og:title" content="Galapago Studio | Soluciones creativas para impulsar tu marca" />
                 <meta property="og:description" content="Estudio creativo en medios digitales. Diseño gráfico, desarrollo web, y estrategias de marketing digital para tu marca." />
-                <meta name="keywords" content="marketing digital, branding, diseño gráfico, desarrollo web, Argentina, Uruguay, estrategia de marca, gestión de redes sociales, diseño de sitios web, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño UX/UI, diseño de logos, creación de contenido, rebranding, publicidad digital, marketing en redes sociales" />
+                <meta name="keywords" content="marketing digital, branding, diseño gráfico, desarrollo web, Argentina, Uruguay, estrategias, gestión de redes sociales, diseño de sitios web, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño UX/UI, diseño de logos, creación de contenido, rebranding, publicidad digital, marketing en redes sociales" />
                 <link rel="canonical" href="https://galapagostudio.com/" />
             </Helmet>
             <div>
