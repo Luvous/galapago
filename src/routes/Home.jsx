@@ -31,9 +31,9 @@ function Home() {
         "hasMap": "https://maps.google.com/maps?cid=YOURCIDNUMBER",
         "address": {
             "@type": "PostalAddress",
-            "addressCountry":"Argentina",
+            "addressCountry":"AR",
             "addressLocality": "Buenos Aires",
-            "addressRegion": "AR",
+            "addressRegion": "DF",
             "postalCode": "C1044",
             "streetAddress": "C1044 Sarmiento 2081"
         },
