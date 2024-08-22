@@ -1,9 +1,13 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
-  [plugins.inputs]
-  buildDir = "."
+[plugins.inputs]
+buildDir = "."
 
 [[redirects]]
 from = "/sitemap.xml"
 to = "/sitemap.xml"
 status = 200
+
+[build]
+command = "npm run build"
+publish = "build"
