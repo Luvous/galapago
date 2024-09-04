@@ -56,14 +56,14 @@ function Footer() {
                     <div className='rs-col'>
                         <div className='colcol'>
                             {/* <p>Trabaja con Nosotros</p> */}
-                            <a rel="noreferrer"  href='/contact' target='_blank'>  <p>Solicitar Presupuesto</p>  </a>
+                            <a href='/contact' >  <p>Solicitar Presupuesto</p>  </a>
                             <p style={{ cursor: 'pointer' }} onClick={openModal}>Newsletter</p>
                             {/* <p>Descargas</p> */}
                         </div>
                         <div className='colcol'>
-                            <a rel="noreferrer"  href='/about' target='_blank'><p>Nosotros</p></a>
-                            <a rel="noreferrer"  href='/services' target='_blank'><p>Servicios</p></a>
-                            <a rel="noreferrer"  href='/contact' target='_blank'><p>Contacto</p></a>
+                            <a href='/about' ><p>Nosotros</p></a>
+                            <a href='/services' ><p>Servicios</p></a>
+                            <a href='/contact' ><p>Contacto</p></a>
                             <a rel="noreferrer"  href='https://medium.com/@studio.galapago' target='_blank'> <p>Blog</p></a>
                         </div>
                         <div className='colcol'>
