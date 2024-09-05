@@ -4,12 +4,18 @@ import turtle_sent from '../resources/sent.webp';
 import CursorFollower from '../components/CursorFollower';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import {Helmet} from "react-helmet";
 
 function Landing() {
 
 
     return (
         <section id='404' >
+            <Helmet>
+                <title>Mensaje Enviado | Gálapago Studio.</title>
+                <meta name="robots" content="noindex" />
+                <meta name="keywords" content="marketing digital, branding, marketing, Argentina, adquirir logo, dtf, Galapago Studio, identidad visual, estudio de diseño, consultoría de marketing, diseño de logos, destacar mi marca, publicidad en redes" />
+            </Helmet>
             <NavBar />
             <div style={{ minHeight: '100vh' }}>
                 <img alt='background noise' className='noisebck' src={landingback} />

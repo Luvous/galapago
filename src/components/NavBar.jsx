@@ -23,7 +23,7 @@ function NavBar() {
         <div>
             <div id='navBar'>
                 <a href='/'>
-                    <img alt='Galapago logo' src={galapago_logo} style={{ width: '10rem', display: 'block', margin:'1rem 0' }} />
+                    <img alt='Galapago logo' src={galapago_logo} style={{ width: '10rem', height: 'auto', display: 'block', margin:'1rem 0' }} />
                 </a>
                 <div className={`pagesIndex ${menuOpen ? 'open' : ''}`}>
                     <a href='/about'>NOSOTROS</a>
